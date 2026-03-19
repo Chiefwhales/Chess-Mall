@@ -75,19 +75,96 @@
       </header>
 
       <main
-        class="relative z-10 flex-grow flex items-center justify-center px-6"
+        class="relative z-10 flex-grow flex flex-col items-center justify-center px-6 py-20"
       >
-        <p
-          class="max-w-2xl text-white text-center text-lg md:text-2xl drop-shadow-md"
+        <div
+          class="mb-6 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md"
         >
-          Snag top-tier chess equipment and play like a whale!
-          <br /><br />
+          <span class="relative flex h-2 w-2">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex h-2 w-2 rounded-full bg-blue-500"
+            ></span>
+          </span>
           <span
-            class="cursor-pointer bg-white/10 text-4xl font-bold drop-shadow-4xl border-2 px-3 rounded-lg hover:bg-black/80"
-            >SHOP NOW</span
-          ><br /><br />
-          and make every move legendary.
-        </p>
+            class="text-[10px] font-bold tracking-[0.2em] text-white/70 uppercase"
+            >New Collection Live</span
+          >
+        </div>
+
+        <div class="relative max-w-4xl text-center">
+          <h2
+            class="mb-6 text-4xl font-extrabold tracking-tight text-white md:text-7xl lg:text-8xl"
+          >
+            Master the Board, <br />
+            <span
+              class="bg-gradient-to-r from-blue-400 via-indigo-400 to-white bg-clip-text text-transparent"
+            >
+              Rule the Deep.
+            </span>
+          </h2>
+
+          <p
+            class="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-white/60 md:text-xl"
+          >
+            Premium chess equipment for those who play with purpose. From
+            tournament-grade sets to luxury boards, elevate your game to
+            legendary status.
+          </p>
+
+          <div
+            class="flex flex-col items-center justify-center gap-6 sm:flex-row"
+          >
+            <a
+              href="Chess-Shop.html"
+              class="group flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-lg font-bold text-slate-950 transition-all hover:scale-105 hover:bg-blue-50 active:scale-95 shadow-lg shadow-white/10"
+            >
+              SHOP NOW
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 transition-transform group-hover:translate-x-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="about-us.html"
+              class="flex items-center gap-2 text-sm font-semibold tracking-widest text-white uppercase transition-all hover:text-blue-400"
+            >
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/5 transition-colors group-hover:border-blue-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ml-1 h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+              Our Vision
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-blue-600/10 blur-[100px]"
+        ></div>
+        <div
+          class="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-indigo-600/10 blur-[100px]"
+        ></div>
       </main>
     </div>
     <footer
