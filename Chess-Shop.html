@@ -17,59 +17,60 @@
         />
       </div>
 
-      <header class="relative z-10 w-full px-4">
-        <h1
-          class="mt-12 text-3xl md:mt-20 md:text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-2xl cursor-pointer"
+      <header class="relative z-40 w-full px-6 py-8">
+        <div
+          class="max-w-7xl mx-auto flex flex-row items-center justify-between md:flex-col md:gap-8"
         >
-          Chief Whales Chess Mall
-        </h1>
-
-        <nav class="mt-2 flex flex-col items-start md:items-center">
-          <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
-          <label
-            for="menu-toggle"
-            class="md:hidden flex flex-col gap-1.5 p-4 cursor-pointer z-50 transition-transform active:scale-95"
+          <h1
+            class="text-2xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl cursor-pointer text-left md:text-center"
           >
-            <span
-              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:rotate-45 peer-checked:translate-y-2.5"
-            ></span>
-            <span
-              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:opacity-0"
-            ></span>
-            <span
-              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2.5"
-            ></span>
-          </label>
+            Chief Whales Chess Mall
+          </h1>
 
-          <ul
-            class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-start md:items-center w-full transition-all duration-300"
-          >
-            <li
-              class="w-auto min-w-[100px] md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-            >
-              <a href="index.html" class="block w-full">Home</a>
-            </li>
+          <nav class="flex flex-col items-end md:items-center">
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
-            <li
-              class="w-auto min-w-[100px] md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+            <label
+              for="menu-toggle"
+              class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-50 transition-transform active:scale-95"
             >
-              <a href="Chess-Shop.html" class="block w-full">Chess Shop</a>
-            </li>
+              <span
+                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:rotate-45 peer-checked:translate-y-2.5"
+              ></span>
+              <span
+                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:opacity-0"
+              ></span>
+              <span
+                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2.5"
+              ></span>
+            </label>
 
-            <li
-              class="w-auto min-w-[100px] md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+            <ul
+              class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-end md:items-center absolute top-full right-6 md:static w-auto transition-all duration-300 z-50"
             >
-              <a href="about-us.html" class="block w-full">About Us</a>
-            </li>
-
-            <li
-              class="w-auto min-w-[100px] md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-            >
-              <a href="contact-us.html" class="block w-full">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+              <li
+                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+              >
+                <a href="index.html" class="block w-full">Home</a>
+              </li>
+              <li
+                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+              >
+                <a href="Chess-Shop.html" class="block w-full">Chess Shop</a>
+              </li>
+              <li
+                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+              >
+                <a href="about-us.html" class="block w-full">About Us</a>
+              </li>
+              <li
+                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
+              >
+                <a href="contact-us.html" class="block w-full">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="relative z-10 w-full max-w-7xl px-6 py-16">
