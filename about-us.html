@@ -7,122 +7,116 @@
     <title>About Us | CW ChessMall</title>
   </head>
 
-  <body class="bg-slate-950 flex flex-col min-h-screen">
-    <div class="fixed inset-0 z-0">
+  <body
+    class="bg-slate-950 text-white min-h-screen flex flex-col selection:bg-blue-500/30"
+  >
+    <div class="fixed inset-0 -z-10">
       <img
         src="images/chess-bg.webp"
-        alt="A Sole Black Knight on a Chess Board"
+        alt="Chess Background"
         class="w-full h-full object-cover opacity-40"
       />
     </div>
 
-    <div class="relative z-10 flex-grow flex flex-col items-center">
-      <header class="relative z-40 w-full px-6 py-8">
-        <div
-          class="max-w-7xl mx-auto flex flex-row items-center justify-between md:flex-col md:gap-8"
+    <header class="relative z-50 w-full px-6 py-8">
+      <div
+        class="max-w-7xl mx-auto flex flex-row items-center justify-between md:flex-col md:gap-8"
+      >
+        <h1
+          class="text-2xl md:text-5xl lg:text-6xl font-bold drop-shadow-2xl cursor-pointer text-left md:text-center"
         >
-          <h1
-            class="text-2xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl cursor-pointer text-left md:text-center"
+          Chief Whales Chess Mall
+        </h1>
+
+        <nav class="flex flex-col items-end md:items-center">
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+          <label
+            for="menu-toggle"
+            class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer transition-transform active:scale-95"
           >
-            Chief Whales Chess Mall
-          </h1>
+            <span
+              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:rotate-45 peer-checked:translate-y-2.5"
+            ></span>
+            <span
+              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:opacity-0"
+            ></span>
+            <span
+              class="w-8 h-1 bg-white rounded-full transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2.5"
+            ></span>
+          </label>
 
-          <nav class="flex flex-col items-end md:items-center">
-            <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
-            <label
-              for="menu-toggle"
-              class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer z-50 transition-transform active:scale-95"
+          <ul
+            class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-2 md:gap-4 absolute top-full right-6 md:static bg-slate-900/90 md:bg-transparent p-4 md:p-0 rounded-xl backdrop-blur-lg md:backdrop-blur-none transition-all duration-300"
+          >
+            <li
+              class="w-32 md:min-w-[140px] border-2 border-white/20 bg-white/10 hover:bg-white/20 px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md transition-all text-sm md:text-base text-center"
             >
-              <span
-                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:rotate-45 peer-checked:translate-y-2.5"
-              ></span>
-              <span
-                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:opacity-0"
-              ></span>
-              <span
-                class="w-8 h-1 bg-white rounded-full transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2.5"
-              ></span>
-            </label>
-
-            <ul
-              class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-end md:items-center absolute top-full right-6 md:static w-auto transition-all duration-300 z-50"
+              <a href="index.html" class="block">Home</a>
+            </li>
+            <li
+              class="w-32 md:min-w-[140px] border-2 border-white/20 bg-white/10 hover:bg-white/20 px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md transition-all text-sm md:text-base text-center"
             >
-              <li
-                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-              >
-                <a href="index.html" class="block w-full">Home</a>
-              </li>
-              <li
-                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-              >
-                <a href="Chess-Shop.html" class="block w-full">Chess Shop</a>
-              </li>
-              <li
-                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-              >
-                <a href="about-us.html" class="block w-full">About Us</a>
-              </li>
-              <li
-                class="w-32 md:min-w-[140px] border-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all text-sm md:text-base"
-              >
-                <a href="contact-us.html" class="block w-full">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
+              <a href="Chess-Shop.html" class="block">Chess Shop</a>
+            </li>
+            <li
+              class="w-32 md:min-w-[140px] border-2 border-white/20 bg-white/10 hover:bg-white/20 px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md transition-all text-sm md:text-base text-center"
+            >
+              <a href="about-us.html" class="block">About Us</a>
+            </li>
+            <li
+              class="w-32 md:min-w-[140px] border-2 border-white/20 bg-white/10 hover:bg-white/20 px-3 py-1.5 md:px-6 md:py-2 rounded-lg backdrop-blur-md transition-all text-sm md:text-base text-center"
+            >
+              <a href="contact-us.html" class="block">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-12">
+      <section
+        class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-3xl shadow-2xl"
+      >
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-slate-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+          ></div>
+          <img
+            src="images/Playing-chess.png"
+            alt="Handcrafted Chess Set"
+            class="relative rounded-2xl w-full object-cover shadow-2xl border border-white/10"
+          />
         </div>
-      </header>
 
-      <main class="w-full max-w-6xl px-6 py-16 md:py-24">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-3xl shadow-2xl"
-        >
-          <div class="relative group">
-            <div
-              class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-slate-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
-            ></div>
-            <img
-              src="images/Playing-chess.png"
-              alt="Handcrafted Chess Set"
-              class="relative rounded-2xl w-full object-cover shadow-2xl border border-white/10"
-            />
-          </div>
-
-          <div class="space-y-6">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-white tracking-tight"
-            >
-              Our Story & <span class="text-blue-400">Strategy</span>
-            </h2>
-            <p class="text-white/80 text-lg leading-relaxed">
+        <div class="space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight">
+            Our Story & <span class="text-blue-400">Strategy</span>
+          </h2>
+          <div class="space-y-4 text-white/80 text-lg leading-relaxed">
+            <p>
               At Chief Whales Chess Mall, we believe that every move counts.
               Founded by passionate players, our mission is to provide the
               global chess community with equipment that matches the elegance
               and depth of the game itself.
             </p>
-            <p class="text-white/70 leading-relaxed">
+            <p class="text-white/70">
               From tournament-grade digital clocks to handcrafted wooden sets
               that serve as heirlooms, we curate our collection with a
-              "Grandmaster" eye for detail. Whether you're making your first
-              opening or defending a championship title, we have the tools you
-              need to master the board.
+              "Grandmaster" eye for detail.
             </p>
-            <div class="pt-4">
-              <div class="flex items-center gap-4">
-                <div class="h-1 w-12 bg-blue-500"></div>
-                <span
-                  class="text-white font-semibold uppercase tracking-widest text-sm"
-                  >Quality Guaranteed</span
-                >
-              </div>
-            </div>
+          </div>
+          <div class="pt-4 flex items-center gap-4">
+            <div class="h-1 w-12 bg-blue-500"></div>
+            <span class="font-semibold tracking-widest text-sm uppercase"
+              >Quality Guaranteed</span
+            >
           </div>
         </div>
-      </main>
-    </div>
-
+      </section>
+    </main>
     <footer
-      class="relative z-10 bg-white/10 backdrop-blur-md text-white border-t border-white/20 py-12 px-6"
+      class="bg-white/10 backdrop-blur-md border-t border-white/20 py-12 px-6"
     >
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left"
@@ -132,14 +126,14 @@
             Chief Whales Chess Mall
           </h3>
           <p class="text-white/60 max-w-xs text-sm leading-relaxed">
-            Premium chess equipment for all Chess Players and Enthusiast.
-            Quality boards, clocks, and pieces.
+            Premium chess equipment for all enthusiasts. Quality boards, clocks,
+            and pieces.
           </p>
         </div>
 
         <div class="flex flex-col items-center md:items-start group">
           <span
-            class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1"
+            class="text-[10px] tracking-[0.2em] text-white/40 mb-1 uppercase font-bold"
             >Email Address</span
           >
           <a
@@ -152,15 +146,15 @@
 
         <div class="flex flex-col items-center md:items-end">
           <span
-            class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4"
+            class="text-[10px] tracking-[0.2em] text-white/40 mb-4 uppercase font-bold"
             >Connect With Us</span
           >
           <div class="flex gap-5">
             <a
-              href="https://web.facebook.com/ChiefWhales?_rdc=2&_rdr#"
-              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
-              aria-label="Facebook"
+              href="https://web.facebook.com/ChiefWhales"
               target="_blank"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all"
+              aria-label="Facebook"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -169,10 +163,10 @@
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/chiefwhales/?hl=en"
-              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
-              aria-label="Instagram"
+              href="https://www.instagram.com/chiefwhales"
               target="_blank"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all"
+              aria-label="Instagram"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -182,21 +176,21 @@
             </a>
             <a
               href="https://www.youtube.com/@chiefwhaleschessmedia"
-              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
-              aria-label="YouTube"
               target="_blank"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all"
+              aria-label="YouTube"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
                 />
               </svg>
             </a>
             <a
               href="https://x.com/ChiefWhales1"
-              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
-              aria-label="X"
               target="_blank"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all"
+              aria-label="X (Twitter)"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -210,7 +204,7 @@
 
       <div class="mt-12 pt-8 border-t border-white/5 text-center">
         <p
-          class="text-[11px] text-white/30 uppercase tracking-widest font-medium"
+          class="text-[11px] text-white/30 tracking-widest font-medium uppercase"
         >
           &copy; 2026 Chief Whales Chess Mall. Strategically Crafted.
         </p>
