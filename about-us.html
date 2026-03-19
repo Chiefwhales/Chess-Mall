@@ -1,27 +1,25 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>CW ChessMall</title>
+    <title>About Us | CW ChessMall</title>
   </head>
 
-  <body class="bg-slate-950">
-    <div
-      class="relative min-h-screen w-full flex flex-col items-center overflow-x-hidden"
-    >
-      <div class="absolute inset-0 z-0">
-        <img
-          src="images/chess-bg.webp"
-          alt="A Sole Black Knight on a Chess Board"
-          class="w-full h-full object-cover opacity-40"
-        />
-      </div>
+  <body class="bg-slate-950 flex flex-col min-h-screen">
+    <div class="fixed inset-0 z-0">
+      <img
+        src="images/chess-bg.webp"
+        alt="A Sole Black Knight on a Chess Board"
+        class="w-full h-full object-cover opacity-40"
+      />
+    </div>
 
-      <header class="relative z-10 w-full px-4">
+    <div class="relative z-10 flex-grow flex flex-col items-center">
+      <header class="w-full px-4">
         <h1
-          class="mt-12 text-3xl md: mt-20 text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-2xl cursor-pointer"
+          class="mt-12 text-3xl md:mt-20 text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-2xl cursor-pointer"
         >
           Chief Whales Chess Mall
         </h1>
@@ -31,26 +29,158 @@
             <li
               class="w-full max-w-[12rem] border-2 bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all"
             >
-              <a href="index.html" class="block w-full">Home Page</a>
+              <a
+                href="index.html"
+                class="block w-full text-sm font-medium uppercase tracking-wider"
+                >Home Page</a
+              >
             </li>
             <li
               class="w-full max-w-[12rem] border-2 bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all"
             >
-              <a href="Chess-Shop.html" class="block w-full">Chess Shop</a>
+              <a
+                href="Chess-Shop.html"
+                class="block w-full text-sm font-medium uppercase tracking-wider"
+                >Chess Shop</a
+              >
+            </li>
+            <li
+              class="w-full max-w-[12rem] border-2 bg-white/30 text-white px-6 py-2 rounded-lg backdrop-blur-md border-white/40 cursor-default text-center transition-all"
+            >
+              <a
+                href="about-us.html"
+                class="block w-full text-sm font-medium uppercase tracking-wider"
+                >About Us</a
+              >
             </li>
             <li
               class="w-full max-w-[12rem] border-2 bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all"
             >
-              <a href="about-us.html" class="block w-full">About Us</a>
-            </li>
-            <li
-              class="w-full max-w-[12rem] border-2 bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg backdrop-blur-md border-white/20 cursor-pointer text-center transition-all"
-            >
-              <a href="contact-us.html" class="block w-full">Contact Us</a>
+              <a
+                href="contact-us.html"
+                class="block w-full text-sm font-medium uppercase tracking-wider"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </nav>
       </header>
+
+      <main class="w-full max-w-6xl px-6 py-16 md:py-24">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-3xl shadow-2xl"
+        >
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-slate-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="images/Playing-chess.png"
+              alt="Handcrafted Chess Set"
+              class="relative rounded-2xl w-full object-cover shadow-2xl border border-white/10"
+            />
+          </div>
+
+          <div class="space-y-6">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-white tracking-tight"
+            >
+              Our Story & <span class="text-blue-400">Strategy</span>
+            </h2>
+            <p class="text-white/80 text-lg leading-relaxed">
+              At Chief Whales Chess Mall, we believe that every move counts.
+              Founded by passionate players, our mission is to provide the
+              global chess community with equipment that matches the elegance
+              and depth of the game itself.
+            </p>
+            <p class="text-white/70 leading-relaxed">
+              From tournament-grade digital clocks to handcrafted wooden sets
+              that serve as heirlooms, we curate our collection with a
+              "Grandmaster" eye for detail. Whether you're making your first
+              opening or defending a championship title, we have the tools you
+              need to master the board.
+            </p>
+            <div class="pt-4">
+              <div class="flex items-center gap-4">
+                <div class="h-1 w-12 bg-blue-500"></div>
+                <span
+                  class="text-white font-semibold uppercase tracking-widest text-sm"
+                  >Quality Guaranteed</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+
+    <footer
+      class="relative z-10 bg-white/10 backdrop-blur-md text-white border-t border-white/20 py-12 px-6"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left"
+      >
+        <div class="space-y-2">
+          <h3 class="text-2xl font-black tracking-tight uppercase">
+            Chief Whales Chess Mall
+          </h3>
+          <p class="text-white/60 max-w-xs text-sm leading-relaxed">
+            Premium chess equipment for all Chess Players and Enthusiast.
+            Quality boards, clocks, and pieces.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center md:items-start group">
+          <span
+            class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1"
+            >Email Address</span
+          >
+          <a
+            href="mailto:chiefwhaleschessmall@gmail.com"
+            class="text-lg font-medium hover:text-blue-400 transition-colors duration-300"
+          >
+            chiefwhaleschessmall@gmail.com
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center md:items-end">
+          <span
+            class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4"
+            >Connect With Us</span
+          >
+          <div class="flex gap-5">
+            <a
+              href="#"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
+              aria-label="Facebook"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="text-white/70 hover:text-white hover:scale-110 transition-all duration-200"
+              aria-label="Instagram"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/5 text-center">
+        <p
+          class="text-[11px] text-white/30 uppercase tracking-widest font-medium"
+        >
+          &copy; 2026 Chief Whales Chess Mall. Strategically Crafted.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
